@@ -1,0 +1,27 @@
+
+Python 2.7.6 (default, Jun 22 2015, 18:00:18) 
+[GCC 4.8.2] on linux2
+Type "copyright", "credits" or "license()" for more information.
+>>> ================================ RESTART ================================
+>>> 
+>>> BALLETS
+['The Nutcracker', 'Duck Lake', 'Sleeping Beauty', 'Onegin', 'Manon', 'Le Corsair', 'Serenade', 'Agon', 'Apollo', 'Scherehazade', 'Giselle', 'Amadeus', 'Robert Schumann\'s "Davids Bundlertanze"', 'Firebird', 'Concerto Barocco', 'Napoli', "A Midsummer Night's Dream", 'La Bayadere', 'Romeo and Juliet', 'Jewels', 'The Four Temperaments', 'La Valse']
+>>> del BALLETS[11]
+>>> print BALLETS
+['The Nutcracker', 'Duck Lake', 'Sleeping Beauty', 'Onegin', 'Manon', 'Le Corsair', 'Serenade', 'Agon', 'Apollo', 'Scherehazade', 'Giselle', 'Robert Schumann\'s "Davids Bundlertanze"', 'Firebird', 'Concerto Barocco', 'Napoli', "A Midsummer Night's Dream", 'La Bayadere', 'Romeo and Juliet', 'Jewels', 'The Four Temperaments', 'La Valse']
+>>> BALLETS[1] = 'Swan Lake'
+>>> BALLETS
+['The Nutcracker', 'Swan Lake', 'Sleeping Beauty', 'Onegin', 'Manon', 'Le Corsair', 'Serenade', 'Agon', 'Apollo', 'Scherehazade', 'Giselle', 'Robert Schumann\'s "Davids Bundlertanze"', 'Firebird', 'Concerto Barocco', 'Napoli', "A Midsummer Night's Dream", 'La Bayadere', 'Romeo and Juliet', 'Jewels', 'The Four Temperaments', 'La Valse']
+>>> BALLETS.append('Herman Schmerman')
+>>> BALLETS
+['The Nutcracker', 'Swan Lake', 'Sleeping Beauty', 'Onegin', 'Manon', 'Le Corsair', 'Serenade', 'Agon', 'Apollo', 'Scherehazade', 'Giselle', 'Robert Schumann\'s "Davids Bundlertanze"', 'Firebird', 'Concerto Barocco', 'Napoli', "A Midsummer Night's Dream", 'La Bayadere', 'Romeo and Juliet', 'Jewels', 'The Four Temperaments', 'La Valse', 'Herman Schmerman']
+>>> BALLETS.extend('Don Quixote', 'Sylvia')
+
+Traceback (most recent call last):
+  File "<pyshell#7>", line 1, in <module>
+    BALLETS.extend('Don Quixote', 'Sylvia')
+TypeError: extend() takes exactly one argument (2 given)
+>>> BALLETS.extend(['Don Quixote', 'Sylvia'])
+>>> BALLETS
+['The Nutcracker', 'Swan Lake', 'Sleeping Beauty', 'Onegin', 'Manon', 'Le Corsair', 'Serenade', 'Agon', 'Apollo', 'Scherehazade', 'Giselle', 'Robert Schumann\'s "Davids Bundlertanze"', 'Firebird', 'Concerto Barocco', 'Napoli', "A Midsummer Night's Dream", 'La Bayadere', 'Romeo and Juliet', 'Jewels', 'The Four Temperaments', 'La Valse', 'Herman Schmerman', 'Don Quixote', 'Sylvia']
+>>> 
