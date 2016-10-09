@@ -22,10 +22,8 @@ def process_data(data):
             (77, 19.25)
 
     """
-    TOTAL = 0
-    for x in data:
-        TOTAL = TOTAL + x
-        AVERAGE = TOTAL / float(len(data))
-    return TOTAL, AVERAGE
-    
-    
+    total_sum = 0
+    for variable in data:
+        total_sum = total_sum + variable
+        average_data = total_sum / float(len(data))
+    return total_sum, average_data
